@@ -1,0 +1,72 @@
+{
+  "expo": {
+    "name": "Agon Preview",
+    "slug": "agon-preview",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#05070F"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Bird-Dex \u9700\u8981\u4f7f\u7528\u76f8\u6a5f\u4f86\u62cd\u651d\u9ce5\u985e\u4e26\u9032\u884c AI \u8fa8\u8b58\u3002",
+        "NSLocationWhenInUseUsageDescription": "Bird-Dex \u9700\u8981\u4f60\u7684\u4f4d\u7f6e\u4ee5\u986f\u793a\u9644\u8fd1\u7684\u89c0\u9ce5\u71b1\u9ede\uff0c\u4e26\u8a18\u9304\u6355\u6349\u5730\u9ede\u3002",
+        "NSPhotoLibraryUsageDescription": "Bird-Dex \u9700\u8981\u8b80\u53d6\u76f8\u7c3f\u4ee5\u9078\u64c7\u5df2\u62cd\u651d\u7684\u9ce5\u985e\u7167\u7247\u3002"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#05070F"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.READ_EXTERNAL_STORAGE"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "\u5141\u8a31 Bird-Dex \u4f7f\u7528\u4f60\u7684\u76f8\u6a5f\u62cd\u651d\u9ce5\u985e\u7167\u7247"
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "\u5141\u8a31 Bird-Dex \u4f7f\u7528\u4f60\u7684\u4f4d\u7f6e\u4ee5\u986f\u793a\u9644\u8fd1\u7684\u89c0\u9ce5\u71b1\u9ede"
+        }
+      ]
+    ],
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "552f0665-e30d-4f11-9ea9-97bc22a22809"
+      }
+    },
+    "updates": {
+      "url": "https://u.expo.dev/552f0665-e30d-4f11-9ea9-97bc22a22809"
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "owner": "arcadalabs",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ]
+  }
+}
