@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIRD-DEX 下載中心</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; color: #333; line-height: 1.6; margin: 0; padding: 0; text-align: center; }
+        .container { max-width: 800px; margin: 50px auto; background: white; padding: 40px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h1 { color: #2e7d32; margin-bottom: 10px; }
+        .hero-img { width: 120px; height: 120px; border-radius: 25px; margin-bottom: 20px; background: #e8f5e9; padding: 10px; }
+        .btn { display: inline-block; background: #2e7d32; color: white; padding: 15px 30px; text-decoration: none; border-radius: 30px; font-weight: bold; margin: 10px; transition: 0.3s; }
+        .btn:hover { background: #1b5e20; transform: translateY(-2px); }
+        .btn.secondary { background: #555; }
+        .steps { text-align: left; background: #f9f9f9; padding: 20px; border-radius: 10px; margin-top: 30px; }
+        .steps h2 { font-size: 1.2rem; color: #444; }
+        .code-block { background: #222; color: #0f0; padding: 15px; border-radius: 5px; text-align: left; font-family: monospace; overflow-x: auto; margin: 10px 0; }
+        footer { margin-top: 50px; font-size: 0.8rem; color: #888; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="./assets/icon.png" alt="App Icon" class="hero-img">
+    <h1>BIRD-DEX 下載中心</h1>
+    <p>專為自然觀鳥與探險設計的電子圖鑑工具</p>
+
+    <div style="margin: 30px 0;">
+        <a href="YOUR_APK_DOWNLOAD_LINK" class="btn">📦 下載 Android APK</a>
+        <a href="https://expo.dev/@your-username/skw-birdex" target="_blank" class="btn secondary">🚀 在 Expo Go 啟動</a>
+    </div>
+
+    <div class="steps">
+        <h2>🛠️ 如何部署與安裝？</h2>
+        <ol>
+            <li><strong>下載 APK：</strong> 點擊上方按鈕，將檔案存至手機。</li>
+            <li><strong>授權安裝：</strong> 於手機設定中開啟「允許安裝未知來源」。</li>
+            <li><strong>開發者部署：</strong> 若要自行編譯，請執行以下指令：</li>
+        </ol>
+        <div class="code-block">
+            npm install<br>
+            npx expo export:web<br>
+            eas build -p android --profile preview
+        </div>
+    </div>
+
+    <div class="steps">
+        <h2>🔑 管理員密碼</h2>
+        <p><strong>家長/老師模式：</strong> 0728</p>
+        <p><strong>超級管理員模式：</strong> 1201</p>
+    </div>
+</div>
+
+<footer>
+    © 2024 SKW BIRD-DEX 項目組
+</footer>
+
+</body>
+</html>
