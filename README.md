@@ -189,4 +189,4 @@ Merlin API Key 申請：https://merlin.allaboutbirds.org/
 
 教育用途免費使用。
 
-© 2024 BIRD-DEX Team
+© 2026 SKWSCOUT
